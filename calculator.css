@@ -1,0 +1,26 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 320px;
+}
+
+.display_panel {
+  flex: 1;
+}
+
+.button_panel {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  margin: 9px;
+  color: white;
+  font-size: 24px;
+  background-color: #555;
+}
