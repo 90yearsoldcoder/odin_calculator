@@ -29,5 +29,20 @@ function str2operation(str) {
   console.log(op);
 }
 
+function calculate(a, b, op) {
+  switch (op) {
+    case "+":
+      return add(a, b);
+    case "-":
+      return substract(a, b);
+    case "*":
+      return multiply(a, b);
+    case "/":
+      return divide(a, b);
+    default:
+      return "Error: Invalid operation";
+  }
+}
+
 st = " 10.1 * 21.05";
 str2operation(st);
