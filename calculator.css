@@ -8,7 +8,7 @@ main {
 .calculator {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 520px;
   background-color: black;
   border-radius: 3%;
   justify-content: center;
@@ -19,14 +19,23 @@ main {
   display: flex;
   flex-direction: column;
   background-color: #b2b9b2;
-  height: 100px;
+  height: 110px;
+  width: 285px;
   margin: 12px;
   border-radius: 3%;
-  font-size: 4.5em;
-  text-shadow: 1.3px 1.3px black;
   padding: 5px;
   align-items: flex-end;
   justify-content: space-around;
+}
+#displayNumber {
+  font-size: 2em;
+  text-shadow: 1.3px 1.3px black;
+  height: 45px;
+}
+#curNumber {
+  font-size: 3.5em;
+  text-shadow: 1.3px 1.3px black;
+  flex: 1;
 }
 
 .button_panel {
@@ -44,6 +53,11 @@ main {
   color: white;
   font-size: 24px;
   background-color: #555;
+  transition: background-color 0.2s;
+}
+
+.btn:active {
+  background-color: aliceblue;
 }
 
 .span2 {
